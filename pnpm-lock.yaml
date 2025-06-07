@@ -8,6 +8,12 @@ importers:
 
   .:
     devDependencies:
+      '@gugbab-package/eslint-config':
+        specifier: workspace:*
+        version: link:packages/eslint-config
+      '@gugbab-package/tsconfig':
+        specifier: workspace:*
+        version: link:packages/tsconfig
       prettier:
         specifier: ^3.5.3
         version: 3.5.3
@@ -77,6 +83,8 @@ importers:
       typescript-eslint:
         specifier: ^8.33.1
         version: 8.33.1(eslint@9.28.0)(typescript@5.8.3)
+
+  packages/tsconfig: {}
 
 packages:
 
