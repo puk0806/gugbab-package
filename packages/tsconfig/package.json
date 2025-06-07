@@ -1,0 +1,10 @@
+{
+  "name": "@gugbab-package/tsconfig",
+  "version": "0.0.0",
+  "description": "gugbab-package tsconifg package",
+  "author": "gugbab",
+  "keywords": [
+    "gugbab"
+  ],
+  "license": "MIT"
+}
