@@ -1,0 +1,24 @@
+{
+  "name": "gugbab-package",
+  "version": "0.0.0",
+  "description": "gugbab-package",
+  "author": "gugbab",
+  "keywords": [
+    "gugbab"
+  ],
+  "license": "ISC",
+  "main": "index.js",
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "typecheck": "turbo run typecheck",
+    "clear-install": "bash scripts/clear-install/index.sh",
+    "use-hook": "git config core.hooksPath .githooks && touch githooks.config.json"
+  },
+  "packageManager": "pnpm@10.11.1+sha512.e519b9f7639869dc8d5c3c5dfef73b3f091094b0a006d7317353c72b124e80e1afd429732e28705ad6bfa1ee879c1fce46c128ccebd3192101f43dd67c667912",
+  "devDependencies": {
+    "prettier": "^3.5.3",
+    "turbo": "^2.5.4",
+    "typescript": "^5.8.3"
+  }
+}
