@@ -1,0 +1,31 @@
+{
+  "name": "@gugbab-package/utils",
+  "version": "1.0.0",
+  "description": "gugbab-package utils",
+  "author": "gugbab",
+  "keywords": [
+    "gugbab"
+  ],
+  "license": "MIT",
+  "sideEffects": false,
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "type": "module",
+  "files": [
+    "dist/**/*"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "typecheck": "tsc -b tsconfig.json",
+    "build": "tsup"
+  },
+  "devDependencies": {
+    "@gugbab-package/eslint-config": "workspace:*",
+    "@gugbab-package/tsconfig": "workspace:*",
+    "@types/node": "^22.15.30",
+    "tslib": "^2.8.1",
+    "tsup": "^8.5.0"
+  }
+}

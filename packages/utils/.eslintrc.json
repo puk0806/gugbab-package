@@ -1,0 +1,4 @@
+{
+  "root": true,
+  "extends": ["@gugbab-package/eslint-config"]
+}
