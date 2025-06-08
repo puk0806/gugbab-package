@@ -1,31 +1,25 @@
 {
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  "[javascript]": {
+    "editor.defaultFormatter": "biomejs.biome"
   },
   "[typescript]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    "editor.defaultFormatter": "biomejs.biome"
   },
-  "[scss]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "biomejs.biome"
   },
-  "[javascript]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  "[json]": {
+    "editor.defaultFormatter": "biomejs.biome"
   },
-  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
-  "eslint.debug": true,
-  "eslint.codeActionsOnSave.rules": null,
-  "eslint.format.enable": true,
-  "eslint.workingDirectories": [
-    {
-      "mode": "auto"
-    }
-  ],
-  "cSpell.userWords": ["gugbab", "Swiper", "tanstack", "typecheck"],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.biome": "explicit",
+    "source.organizeImports.biome": "explicit"
+  },
+  "biome.requireConfiguration": true,
+  "biome.configPath": "./biome.json",
   "typescript.tsdk": "node_modules/typescript/lib",
+  "cSpell.userWords": ["gugbab", "Swiper", "tanstack", "typecheck"],
   "diffEditor.ignoreTrimWhitespace": false,
-  "workbench.settings.applyToAllProfiles": [],
-  "workbench.iconTheme": "material-icon-theme"
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.settings.applyToAllProfiles": []
 }

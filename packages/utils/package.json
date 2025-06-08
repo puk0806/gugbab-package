@@ -22,8 +22,9 @@
     "build": "tsup"
   },
   "devDependencies": {
-    "@gugbab-package/eslint-config": "workspace:*",
+    "@gugbab-package/biome-config": "workspace:*",
     "@gugbab-package/tsconfig": "workspace:*",
+    "@biomejs/biome": "^1.9.4",
     "@types/node": "^22.15.30",
     "tslib": "^2.8.1",
     "tsup": "^8.5.0"
