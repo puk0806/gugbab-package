@@ -3,15 +3,16 @@
   "version": "0.0.0",
   "description": "gugbab-package",
   "author": "gugbab",
-  "keywords": [
-    "gugbab"
-  ],
+  "keywords": ["gugbab"],
   "license": "ISC",
   "main": "index.js",
   "scripts": {
     "dev": "turbo run dev",
     "build": "turbo run build",
+    "biome": "turbo run biome",
+    "biome:utils": "pnpm --filter @gugbab-package/utils biome",
     "typecheck": "turbo run typecheck",
+    "typecheck:utils": "pnpm --filter @gugbab-package/utils typecheck",
     "clear-install": "bash scripts/clear-install/index.sh",
     "use-hook": "git config core.hooksPath .githooks && touch githooks.config.json"
   },

@@ -3,14 +3,10 @@
   "version": "0.0.0",
   "description": "gugbab-package biome-config package",
   "author": "gugbab",
-  "keywords": [
-    "gugbab"
-  ],
+  "keywords": ["gugbab"],
   "license": "MIT",
   "type": "module",
-  "files": [
-    "biome.json"
-  ],
+  "files": ["biome.json"],
   "packageManager": "pnpm@10.11.1",
   "devDependencies": {
     "@biomejs/biome": "^1.9.4"

@@ -3,8 +3,6 @@
   "version": "0.0.0",
   "description": "gugbab-package tsconifg package",
   "author": "gugbab",
-  "keywords": [
-    "gugbab"
-  ],
+  "keywords": ["gugbab"],
   "license": "MIT"
 }
