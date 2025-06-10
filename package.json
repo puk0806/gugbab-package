@@ -9,8 +9,11 @@
   "scripts": {
     "dev": "turbo run dev",
     "build": "turbo run build",
+    "build:utils": "pnpm --filter @gugbab-package/utils build",
+    "build:icons": "pnpm --filter @gugbab-package/icons build",
     "biome": "turbo run biome",
     "biome:utils": "pnpm --filter @gugbab-package/utils biome",
+    "biome:icons": "pnpm --filter @gugbab-package/icons biome",
     "typecheck": "turbo run typecheck",
     "typecheck:utils": "pnpm --filter @gugbab-package/utils typecheck",
     "clear-install": "bash scripts/clear-install/index.sh",
