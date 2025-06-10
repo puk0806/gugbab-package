@@ -71,7 +71,7 @@
         "useSelfClosingElements": "error",
         "useSingleVarDeclarator": "error",
         "noUnusedTemplateLiteral": "error",
-        "useNodejsImportProtocol": "error",
+        "useNodejsImportProtocol": "off",
         "useTemplate": "error",
         "noUselessElse": "error",
         "noVar": "error"
