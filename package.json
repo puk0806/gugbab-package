@@ -8,13 +8,17 @@
   "main": "index.js",
   "scripts": {
     "dev": "turbo run dev",
+    "dev:ui": "pnpm --filter @gugbab-package/ui dev",
     "build": "turbo run build",
+    "build:ui": "pnpm --filter @gugbab-package/ui build",
     "build:utils": "pnpm --filter @gugbab-package/utils build",
     "build:icons": "pnpm --filter @gugbab-package/icons build",
     "biome": "turbo run biome",
+    "biome:ui": "pnpm --filter @gugbab-package/ui biome",
     "biome:utils": "pnpm --filter @gugbab-package/utils biome",
     "biome:icons": "pnpm --filter @gugbab-package/icons biome",
     "typecheck": "turbo run typecheck",
+    "typecheck:ui": "pnpm --filter @gugbab-package/ui typecheck",
     "typecheck:utils": "pnpm --filter @gugbab-package/utils typecheck",
     "clear-install": "bash scripts/clear-install/index.sh",
     "use-hook": "git config core.hooksPath .githooks && touch githooks.config.json"

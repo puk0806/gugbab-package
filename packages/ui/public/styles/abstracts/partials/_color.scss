@@ -1,0 +1,84 @@
+@use "sass:selector";
+@use "public/styles/abstracts/font";
+@use "public/styles/abstracts/palette";
+
+@mixin colorNameLoop($self, $colorname) {
+  @each $name, $color in $colorname {
+    &#{$self}--#{$name} {
+      color: $color;
+    }
+  }
+}
+
+@mixin colorClass($self) {
+  $color-common: (
+    "white": palette.$White,
+    "black": palette.$Black,
+    'transparent' : palette.$Transparent,
+  );
+
+  $color-gray: (
+    "gray10": palette.$Gray10,
+    "gray20": palette.$Gray20,
+    "gray30": palette.$Gray30,
+    "gray40": palette.$Gray40,
+    "gray50": palette.$Gray50,
+    "gray60": palette.$Gray60,
+    "gray70": palette.$Gray70,
+    "gray80": palette.$Gray80,
+    "gray90": palette.$Gray90,
+  );
+
+  $color-primary: (
+    "primary10": palette.$Blue10,
+    "primary20": palette.$Blue20,
+    "primary30": palette.$Blue30,
+    "primary40": palette.$Blue40,
+    "primary50": palette.$Blue50,
+    "primary60": palette.$Blue60,
+    "primary70": palette.$Blue70,
+    "primary80": palette.$Blue80,
+    "primary90": palette.$Blue90,
+    "primary100": palette.$Blue100,
+  );
+
+  $color-secondary: (
+    "secondary10": palette.$Green10,
+    "secondary20": palette.$Green20,
+    "secondary30": palette.$Green30,
+    "secondary40": palette.$Green40,
+    "secondary50": palette.$Green50,
+    "secondary60": palette.$Green60,
+    "secondary70": palette.$Green70,
+    "secondary80": palette.$Green80,
+    "secondary90": palette.$Green90,
+    "secondary100": palette.$Green100,
+  );
+
+  $color-system: (
+    "point": palette.$Point,
+    "point-bg": palette.$PointBg,
+    "point-txt": palette.$PointTxt,
+    "danger": palette.$Danger,
+    "danger-bg": palette.$DangerBg,
+    "danger-txt": palette.$DangerTxt,
+    "warning": palette.$Warning,
+    "warning-bg": palette.$WarningBg,
+    "warning-txt": palette.$WarningTxt,
+    "success": palette.$Success,
+    "success-bg": palette.$SuccessBg,
+    "success-txt": palette.$SuccessTxt,
+    "info": palette.$Info,
+    "info-bg": palette.$InfoBg,
+    "info-txt": palette.$InfoTxt,
+    "disabled": palette.$Disabled,
+    "disabled-bg": palette.$DisabledBg,
+    "disabled-txt": palette.$DisabledTxt,
+  );
+
+  @include colorNameLoop($self, $color-common);
+  @include colorNameLoop($self, $color-gray);
+  @include colorNameLoop($self, $color-primary);
+  @include colorNameLoop($self, $color-secondary);
+  @include colorNameLoop($self, $color-system);
+}

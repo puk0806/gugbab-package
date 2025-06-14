@@ -1,0 +1,7 @@
+@mixin loopModifyClass($self, $group, $property) {
+  @each $name, $val in $group {
+    &#{$self}--#{$name} {
+      #{$property}: #{$val};
+    }
+  }
+}
