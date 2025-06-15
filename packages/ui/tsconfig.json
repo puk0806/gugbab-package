@@ -1,0 +1,9 @@
+{
+  "extends": "@gugbab-package/tsconfig/react-library.json",
+  "include": ["./react-app-env.d.ts", "src/**/*"],
+  "exclude": ["dist", "build", "node_modules"],
+  "compilerOptions": {
+    "baseUrl": "src",
+    "paths": { "@types": ["types/index.ts"] }
+  }
+}

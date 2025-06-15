@@ -1,0 +1,19 @@
+/* Error: Undefined variable.
+ *    ,
+ * 55 |     "secondary100": palette.$Green100,
+ *    |                     ^^^^^^^^^^^^^^^^^
+ *    '
+ *   public/styles/abstracts/partials/_color.scss 55:21  colorClass()
+ *   src/components/display/Typography/index.scss 81:3   @import
+ *   public/styles/components.scss 1:9                   root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: Undefined variable.\a    \2577 \a 55 \2502      "secondary100": palette.$Green100,\a    \2502                      ^^^^^^^^^^^^^^^^^\a    \2575 \a   public/styles/abstracts/partials/_color.scss 55:21  colorClass()\a   src/components/display/Typography/index.scss 81:3   @import\a   public/styles/components.scss 1:9                   root stylesheet';
+}
