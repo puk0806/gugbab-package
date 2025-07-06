@@ -25,7 +25,7 @@ def lint_files(modified_files):
     try:
         for file in files:
             print(f"Biome 적용 중: {file}")
-            subprocess.run(f"npx biome check --apply '{file}'", shell=True, check=True)
+            subprocess.run(f"npx biome format  --write '{file}'", shell=True, check=True)
 
         files_str = " ".join(f"'{file}'" for file in files)
         subprocess.run(f"git add {files_str}", shell=True, check=True)

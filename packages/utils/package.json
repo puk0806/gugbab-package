@@ -3,25 +3,29 @@
   "version": "1.0.0",
   "description": "gugbab-package utils",
   "author": "gugbab",
-  "keywords": ["gugbab"],
+  "keywords": [
+    "gugbab"
+  ],
   "license": "MIT",
   "sideEffects": false,
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "type": "module",
-  "files": ["dist/**/*"],
+  "files": [
+    "dist/**/*"
+  ],
   "publishConfig": {
     "access": "public"
   },
   "scripts": {
     "build": "tsup",
-    "biome": "biome check",
+    "biome": "biome format --write",
     "typecheck": "tsc -b tsconfig.json"
   },
   "devDependencies": {
     "@gugbab-package/biome-config": "workspace:*",
     "@gugbab-package/tsconfig": "workspace:*",
-    "@biomejs/biome": "^1.9.4",
+    "@biomejs/biome": "^2.0.6",
     "@types/node": "^22.15.30",
     "tslib": "^2.8.1",
     "tsup": "^8.5.0"

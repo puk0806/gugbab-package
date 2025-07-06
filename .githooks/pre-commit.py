@@ -12,7 +12,7 @@ if not js_ts_files:
 try:
     files_str = " ".join([f"'{file}'" for file in js_ts_files])
 
-    subprocess.run(f"npx biome check {files_str} --apply", shell=True, check=True)
+    subprocess.run(f"npx biome format {files_str} --write", shell=True, check=True)
     subprocess.run(f"git add {' '.join(js_ts_files)}", shell=True, check=True)
 
 except subprocess.CalledProcessError as e:

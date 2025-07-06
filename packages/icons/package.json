@@ -3,26 +3,30 @@
   "version": "0.0.0",
   "description": "gugbab-package icons",
   "author": "gugbab",
-  "keywords": ["gugbab"],
+  "keywords": [
+    "gugbab"
+  ],
   "license": "MIT",
   "sideEffects": false,
   "main": "dist/index.ts",
   "module": "dist/index.ts",
   "type": "module",
-  "files": ["dist/**"],
+  "files": [
+    "dist/**"
+  ],
   "publishConfig": {
     "access": "public"
   },
   "scripts": {
     "build": "sh scripts/generate-constants.sh && fantasticon",
-    "biome": "biome check",
+    "biome": "biome format --write",
     "prebuild": "node scripts/prebuild.js",
     "postbuild": "sh scripts/add-static-images.sh && pnpm cleancss -b --batch-suffix '' dist/*.css"
   },
   "devDependencies": {
     "@gugbab-package/biome-config": "workspace:*",
     "@gugbab-package/tsconfig": "workspace:*",
-    "@biomejs/biome": "^1.9.4",
+    "@biomejs/biome": "^2.0.6",
     "clean-css-cli": "^5.6.3",
     "fantasticon": "^2.0.0"
   }

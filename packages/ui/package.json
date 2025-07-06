@@ -3,14 +3,20 @@
   "version": "0.0.0",
   "description": "gugbab-package ui",
   "author": "gugbab",
-  "keywords": ["gugbab"],
+  "keywords": [
+    "gugbab"
+  ],
   "license": "MIT",
   "sideEffects": false,
   "module": "dist/index.js",
   "type": "module",
   "types": "dist/index.d.ts",
   "main": "dist/index.umd.cjs",
-  "files": ["dist/**", "public/styles/abstracts", "public/styles/components.css"],
+  "files": [
+    "dist/**",
+    "public/styles/abstracts",
+    "public/styles/components.css"
+  ],
   "publishConfig": {
     "access": "public"
   },
@@ -18,7 +24,7 @@
     "dev": "pnpm build --watch",
     "build": "tsc && tsup",
     "typecheck": "tsc -b tsconfig.json",
-    "biome": "biome check",
+    "biome": "biome format --write",
     "ui-compile": "sh ./scripts/ui-compile.sh",
     "postbuild": "sh ./scripts/postbuild.sh"
   },
