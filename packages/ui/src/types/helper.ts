@@ -1,4 +1,4 @@
-import type { ComponentPropsWithRef, ComponentPropsWithoutRef, ElementType } from 'react';
+import type { ComponentPropsWithoutRef, ComponentPropsWithRef, ElementType } from 'react';
 
 /**
  * 다형성 컴포넌트를 만들기위한 타입
