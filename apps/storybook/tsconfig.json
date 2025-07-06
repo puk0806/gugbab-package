@@ -1,0 +1,12 @@
+{
+  "extends": "@gugbab-package/tsconfig/react-library.json",
+  "include": [".", "stories/**/*.ts", "stories/**/*.tsx"],
+  "exclude": ["dist", "build", "node_modules"],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@components": ["../../packages/ui/src/components/index.ts"],
+      "@types": ["../../packages/ui/src/types/index.ts"]
+    }
+  }
+}
