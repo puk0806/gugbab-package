@@ -1,0 +1,37 @@
+{
+  "name": "@gugbab-package/storybook",
+  "version": "0.0.0",
+  "description": "gugbab-package storybook",
+  "author": "gugbab",
+  "keywords": [
+    "gugbab"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "dev": "storybook dev -p 5555",
+    "build": "storybook build",
+    "typecheck": "tsc -b tsconfig.json",
+    "biome": "biome format --write"
+  },
+  "dependencies": {
+    "@gugbab-package/ui": "workspace:*",
+    "dayjs": "^1.11.11",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@gugbab-package/biome-config": "workspace:*",
+    "@gugbab-package/tsconfig": "workspace:*",
+    "@storybook/addon-essentials": "^8.6.14",
+    "@storybook/addon-interactions": "^8.6.14",
+    "@storybook/addon-links": "^9.0.9",
+    "@storybook/react": "^9.0.9",
+    "@storybook/react-vite": "^9.0.9",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "@vitejs/plugin-react": "^4.5.2",
+    "chromatic": "^12.2.0",
+    "storybook": "^9.0.9",
+    "vite-tsconfig-paths": "^5.1.4"
+  }
+}
